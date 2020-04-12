@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF9F5"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Shared_Preferences Example"
+        android:textSize="20sp"
+        android:textColor="#F4A44A"
+        android:textStyle="bold|italic"
+        android:gravity="center"/>
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:hint="Username" />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:inputType="number"
+        android:hint="Age" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/weight"
+        android:layout_below="@+id/editText2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:inputType="number"
+        android:layout_alignParentEnd="true"
+        android:hint="Weight" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/height"
+        android:layout_below="@+id/editText2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:inputType="number"
+        android:hint="Height" />
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+    <CheckBox
+        android:id="@+id/chkFemale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FeMale"/>
+    <CheckBox
+        android:id="@+id/chkMale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Male"
+        android:layout_marginLeft="20dp"
+        />
+</LinearLayout>
+    <Switch
+        android:id="@+id/appmode"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:paddingTop="10dp"
+        android:text="App Mode  "
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="20dp"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:text="Save"
+            android:textSize="18sp"
+            android:id="@+id/btnSave"
+            android:background="#0EBF00"
+            android:layout_below="@+id/editText3"
+            android:layout_centerHorizontal="true"
+             />
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Show"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/btnShow"
+            android:background="#FF2020"
+            android:layout_below="@+id/editText3"
+            android:layout_centerHorizontal="true"/>
+    </LinearLayout>
+
+
+</LinearLayout>
